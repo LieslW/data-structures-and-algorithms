@@ -22,3 +22,5 @@ To run your tests
 
 - Code Challenge 1: [Array Reverse](python/docs/code-challenges/array-reverse/README.md)
 - Code Challenge 2:[Array Insert Shift](python/docs/code-challenges/array-insert-shift/README.md)
+- Code Challenge 3: [Array Binary Search](python/docs/code-challenges/array-binary-search/README.md)
+
