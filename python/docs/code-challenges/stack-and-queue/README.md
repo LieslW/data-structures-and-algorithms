@@ -29,9 +29,9 @@ Write tests to prove some basic functionality of stacks and queues.
 [Test Queue](python/tests/data_structures/test_queue.py)
 
 ## Approach and Efficiency
-<!-- What approach did you take? Why? What's Big O? -->
+To solve each feature task, I went slowly through the tests and made sure I understood what exactly was being asked. Then I built the function around that.
 
-## API
-<!-- Description of each method publicly available to your Stack and Queue  -->
+Big O Notation for each Feature Task listed above is O(1). It takes the same amount of time no matter how many Nodes within the stack.
+
 
 
