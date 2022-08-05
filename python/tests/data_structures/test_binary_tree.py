@@ -2,6 +2,12 @@ import pytest
 from data_structures.binary_tree import BinaryTree, Node
 
 
+def test_node_creation():
+    node = Node("apple")
+    assert node.value == "apple"
+    assert node.left is None
+    assert node.right is None
+
 def test_exists():
     assert BinaryTree
 
