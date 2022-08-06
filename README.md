@@ -25,4 +25,5 @@ To run your tests
 - Code Challenge 3: [Array Binary Search](python/docs/code-challenges/array-binary-search/README.md)
 - Code Challenge 10: [Stack and Queue](python/docs/code-challenges/stack-and-queue/README.md)
 - Code Challenge 13: [Stack Queue Brackets](python/docs/code-challenges/stack-queue-brackets/README.md)
+- Code Challenge 15: [Trees](python/docs/code-challenges/trees/README.md)
 
