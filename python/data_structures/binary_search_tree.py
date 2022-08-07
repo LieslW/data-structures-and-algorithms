@@ -15,6 +15,7 @@ class BinarySearchTree(BinaryTree):
         wrap value in a Node and add it at correct spot
         """
         node = Node(value)
+
         if not self.root:
             self.root = node
 
