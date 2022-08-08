@@ -13,6 +13,8 @@ Write tests to challenge the following:
 6. Will return false when searching for a value in the linked list that does not exist
 7. Can properly return a collection of all the values that exist in the linked list
 
+[Linked Lists](python/data_structures/linked_list.py)
+[Linked Lists: Tests](python/tests/data_structures/test_linked_list.py)
 
 ## Approach & Efficiency
 Took a rigorious testing approach in which I developed the functions around the pre-existing tests. First, I understood what the test required then built the function, values, and functionality from there. Big O notation for a singly linked list is O(N).
