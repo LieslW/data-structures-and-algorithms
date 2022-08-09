@@ -1,6 +1,5 @@
 from data_structures.binary_tree import BinaryTree, Node
 
-
 class BinarySearchTree(BinaryTree):
     def add(self, value):
         def move(root, new_node):

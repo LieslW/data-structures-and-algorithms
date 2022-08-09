@@ -7,35 +7,37 @@ class Queue:
     """
 
     def __init__(self):
+        # initialization here
         self.front = None
         self.rear = None
 
     def enqueue(self, value):
-        new_rear = Node(value)
-
-        if not self.rear:
-            self.rear = new_rear
-            self.front = new_rear
+        # method body here
+        if not self.front:
+            self.front = Node(value)
+            self.rear = self.front
         else:
-            old_rear = self.rear
-            self.rear = new_rear
-            old_rear.next = new_rear
+            self.rear.next = Node(value)
+            self.rear = self.rear.next
 
     def dequeue(self):
-
-        if self.is_empty():
-            raise InvalidOperationError("Method not allowed on empty queue")
-        old_front = self.front
+        if self.front is None:
+            raise InvalidOperationError
+        temporary_value = self.front
         self.front = self.front.next
-        return old_front.value
+        temporary_value.next = None
+        return temporary_value.value
 
     def peek(self):
-        if self.is_empty():
-            raise InvalidOperationError("InvalidOperationError")
-        return self.front.value
+        if not self.front:
+            raise InvalidOperationError
+        else:
+            return self.front.value
 
     def is_empty(self):
-        return self.front is None
+        if self.front is None:
+            return True
+        return False
 
 
 class Node:
