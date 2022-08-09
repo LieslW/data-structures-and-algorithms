@@ -25,6 +25,7 @@ class BinarySearchTree(BinaryTree):
     def contains(self, value):
         if not self.root:
             return False
+
         def move(root, value):
             if root.value == value:
                 return True
