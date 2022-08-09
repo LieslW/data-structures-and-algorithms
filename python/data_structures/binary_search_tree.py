@@ -2,54 +2,41 @@ from data_structures.binary_tree import BinaryTree, Node
 
 
 class BinarySearchTree(BinaryTree):
-    """
-    Put docstring here
-    """
-
-    # def __init__(self):
-    #     # initialization here
-    #     pass
-
     def add(self, value):
-        """
-        wrap value in a Node and add it at correct spot
-        """
-        node = Node(value)
-        if not self.root:
-            self.root = node
-
-        def track(root, add_node):
-            if root is None:
+        def move(root, new_node):
+            if not root:
                 return
-
-            if add_node.value < root.value:
-                if root.left is None:
-                    # spot available
-                    root.left = add_node
+            if new_node.value < root.value:
+                if root.left:
+                    move(root.left, new_node)
                 else:
-                    track(root.left, add_node)
+                    root.left = new_node
             else:
-                if root.right is None:
-                    # spot available
-                    root.right = add_node
+                if root.right:
+                    move(root.right, new_node)
                 else:
-                    track(root.right, add_node)
+                    root.right = new_node
 
-        track(self.root, node)
+        added_node = Node(value)
+        if not self.root:
+            self.root = added_node
+            return
+        move(self.root, added_node)
 
-    def contains(self, target):
+    def contains(self, value):
+        if not self.root:
+            return False
 
-        def track(root):
-            if root is None:
-                return False
-
-            if target == root.value:
+        def move(root, value):
+            if root.value == value:
                 return True
+            elif root.value > value:
+                if root.left:
+                    return move(root.left, value)
+            elif root.value < value:
+                if root.right:
+                    return move(root.right, value)
+            return False
 
-            if target < root.value:
-                return track(root.left)
-            else:
-                return track(root.right)
-
-        return track(self.root)
+        return move(self.root, value)
 
