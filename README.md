@@ -30,4 +30,5 @@ To run your tests
 - Code Challenge 13: [Stack Queue Brackets](python/docs/code-challenges/stack-queue-brackets/README.md)
 - Code Challenge 15: [Trees](python/docs/code-challenges/trees/README.md)
 - Code Challenge 16: [Tree Breadth First](python/docs/code-challenges/tree-breadth-first/README.md)
+- Code Challenge 17: [Tree Max](python/docs/code-challenges/tree-max/README.md)
 
