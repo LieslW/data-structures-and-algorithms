@@ -21,9 +21,12 @@ To run your tests
 ### 401 Data Structures, Code Challenges
 
 - Code Challenge 1: [Array Reverse](python/docs/code-challenges/array-reverse/README.md)
-- Code Challenge 2:[Array Insert Shift](python/docs/code-challenges/array-insert-shift/README.md)
+- Code Challenge 2: [Array Insert Shift](python/docs/code-challenges/array-insert-shift/README.md)
 - Code Challenge 3: [Array Binary Search](python/docs/code-challenges/array-binary-search/README.md)
 - Code Challenge 5: [Linked List](python/docs/code-challenges/linked-list/README.md)
+- Code Challenge 6: [Linked List Insertions](python/docs/code-challenges/linked-list-insertions/README.md)
+- Code Challenge 7: [Linked List kth](python/docs/code-challenges/linked-list-kth/README.md)
+- Code Challenge 8: [Linked List Zip](python/docs/code-challenges/linked-list-zip/README.md)
 - Code Challenge 10: [Stack and Queue](python/docs/code-challenges/stack-and-queue/README.md)
 - Code Challenge 11: [Stack Queue Pseudo](python/docs/code-challenges/stack-queue-pseudo/README.md)
 - Code Challenge 12: [Stack Queue Animal Shelter](python/docs/code-challenges/stack-queue-animal-shelter/README.md)
@@ -32,4 +35,5 @@ To run your tests
 - Code Challenge 16: [Tree Breadth First](python/docs/code-challenges/tree-breadth-first/README.md)
 - Code Challenge 17: [Tree Max](python/docs/code-challenges/tree-max/README.md)
 - Code Challenge 18: [Tree Fizz Buzz](python/docs/code-challenges/tree-fizz-buzz/README.md)
+- Code Challenge 19: []()
 
