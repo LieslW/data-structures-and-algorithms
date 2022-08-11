@@ -1,5 +1,6 @@
 from data_structures.invalid_operation_error import InvalidOperationError
 
+
 class Stack:
     """
     Put docstring here
@@ -29,8 +30,6 @@ class Stack:
         if self.is_empty():
             raise InvalidOperationError("Method not allowed on empty collection")
         return self.top.value
-
-
 
 
 class Node:
