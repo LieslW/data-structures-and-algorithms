@@ -5,7 +5,6 @@ class AnimalShelter:
     def __init__(self):
         self.dog = Queue()
         self.cat = Queue()
-        # self.shelter = Queue()
 
     def enqueue(self,animal):
         if animal.type == 'dog':
