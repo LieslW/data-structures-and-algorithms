@@ -69,7 +69,7 @@ As in pass 4, the next two values are compared and since they are properly sorte
 
 > 2   4   **8**   **5**   9   14
 
-> 2   **4**   **5**   8   9   14  
+> 2   **4**   **5**   8   9   14
 
 Here the algorithm has run into the next two values that do need proper sorting. Once value **5** is put before **14**, it is compared to the other values and put before them until it gets to value **4**. Since **5** is greater than **4**, it is left where it is after the four.
 
@@ -82,6 +82,7 @@ Now all values have been compared to each the next and sorted in proper order. W
 ## Efficiency
 
 *Time:*
-- Defintion and explanation here
+- **O(N^2)**: the algorithm has to sort through the list one time in the best case scenario. However, in comparing and sorting the values, it has to constantly re-iterate through the list to accommodate swapping. Thus, the time increases exponentially.
+
 *Space:*
-- Definition and explanation here
+- **O(1)**: the algorithm is taking in a list and returning the same list. It does not take up any extra space, thus it is O(1).
