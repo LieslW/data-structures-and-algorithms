@@ -25,11 +25,11 @@
 
 Sample List: [sample list here]
 
-### Pass 1 through Pass []...
+#### Pass 1 through Pass []...
 
 ## Efficiency
 
 *Time:*
--
+- Defintion and explanation here
 *Space:*
--
+- Definition and explanation here
