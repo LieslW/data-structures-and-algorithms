@@ -1,6 +1,6 @@
 # Insertion Sort
 
-**Insertion Sort** is a simple sorting algorithm that sorts the values within the list in comparison to a selected value. The unsorted values are placed at the correct position in comparison to the value and the value is put into the correct place back within the list, then another value is selected. This process is repeated until the list has been sorted.
+**Insertion Sort** is a simple sorting algorithm that utilizes comparing values together and sorting them. The algorithm does this throughout the list until all have been sorted properly. 
 
 ## Pseudocode
 
