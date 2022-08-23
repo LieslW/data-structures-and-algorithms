@@ -1,6 +1,6 @@
 # Insertion Sort
 
-**Insertion Sort** is a simple sorting algorithm that utilizes comparing values together and sorting them. The algorithm does this throughout the list until all have been sorted properly. 
+**Insertion Sort** is a simple sorting algorithm that utilizes comparing values together and sorting them. The algorithm does this throughout the list until all have been sorted properly.
 
 ## Pseudocode
 
@@ -23,9 +23,13 @@
 
 ## Trace
 
-Sample List: [sample list here]
+Sample List: [4, 8, 2, 9, 14, 5]
 
-#### Pass 1 through Pass []...
+#### Pass 1
+
+> **4**   **8**   2   9   14   5
+
+First two values are compared to each other. Whichever is smaller should be first and greater than second. In this case, the two values are already sorted so the next two values are selected in *Pass 2*. 
 
 ## Efficiency
 
