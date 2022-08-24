@@ -1,5 +1,13 @@
-class InsertionSort(list):
-    pass
+class InsertionSort():
+
+    def insertion_sort(self, list):
+        for i in range(1, len(list)):
+            key = list[i]
+            move_value = i-1
+            while move_value >= 0 and key < list[move_value]:
+                list[move_value + 1] = list[move_value]
+                move_value -= 1
+            list[move_value + 1] = key
 
 # InsertionSort(int[]
 # arr)
