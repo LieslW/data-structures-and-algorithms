@@ -36,4 +36,5 @@ To run your tests
 - Code Challenge 17: [Tree Max](python/docs/code-challenges/tree-max/README.md)
 - Code Challenge 18: [Tree Fizz Buzz](python/docs/code-challenges/tree-fizz-buzz/README.md)
 - Code Challenge 26: [Insertion Sort](sorting/insertion/README.md)
+- Code Challenge 27: [Merge Sort](sorting/merge/README.md)
 
