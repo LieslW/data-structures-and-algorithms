@@ -1,6 +1,6 @@
 # Merge Sort
 
-**Merge Sort**
+**Merge Sort** is another sorting algorithm that uses two methods to go through what's called the "divide and conquer" strategy. In the method, the list is divided into equal halves until it can't be divided any further. Then it combines them back together in a sorted manner. The second method takes the two sorted lists and merges them together to end up with the original list, but now in sorted order.
 
 ## Pseudocode
 
@@ -44,10 +44,14 @@ ALGORITHM Merge(left, right, arr)
 
 ## Trace
 
-Sample List: [4, 8, 2, 9, 14, 5]
+Sample List: [4, 8, 2, 21, 9, 14, 5]
 
-#### Pass 1
+#### Pass 1 (Method 1)
 
+> [4   8   2   21   9   14   5]
+> [4    8   2   21]   [9  14   5]
+
+To start, we are given this list of 7 values. It's going to be divided in half and divided in half more later on.
 
 #### Pass 2
 
