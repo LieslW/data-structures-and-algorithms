@@ -48,7 +48,7 @@ Sample List: [4, 8, 2, 21, 9, 14, 5]
 
 #### Pass 1 (Method 1)
 
-> [4   8   2   21   9   14   5]
+> [4   8   2   21   9   14   5]  
 > [4    8   2   21]   [9  14   5]
 
 To start, we are given this list of 7 values. It's going to be divided in half and divided in half more later on.
