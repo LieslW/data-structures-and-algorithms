@@ -1,15 +1,23 @@
 import pytest
-from code_challenges.insertion_sort import InsertionSort
+from code_challenges.insertion_sort import insertion_sort
 
 
 def test_exists():
-    assert InsertionSort
+    assert insertion_sort
 
 
-@pytest.mark.skip
-def test_append():
-    insertion_sort = InsertionSort()
+# @pytest.mark.skip
+def test_insertion_sort_list():
+    list = [3,5,2,8,6]
+    actual = insertion_sort(list)
+    expected = [2,3,5,6,8]
+    assert actual == expected
 
-    insertion_sort.insert("")
 
-    assert str(insertion_sort) == "{ banana } -> { apple } -> { cucumber } -> NULL"
+# @pytest.mark.skip
+def test_insertion_sort_list():
+    list = [1,11,13,22,67]
+    actual = insertion_sort(list)
+    expected = [1,11,13,22,67]
+    assert actual == expected
+
