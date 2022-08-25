@@ -66,18 +66,51 @@ So far, the list has only had one pass through the first method which splits the
 
 #### Pass 3
 
+> [4] [8]
+
+> [4  8]
+
+Method 1 will focus on very first half before it moves to the rest of the list. Here we see the first two original values, `4` and `8`, being merged back together in sorted order.
 
 #### Pass 4
 
+> [2  21]
+
+> [2]  [21]
+
+> [2  21]
+
+Like `4` and `8` above, the next two original values are divided until no further then put back together in a sorted order.
 
 #### Pass 5
 
+> [4  8]   [2  21]
+
+> [2  4  8  21]
+
+Still focusing on the original first half, we have two sorted halves. These are merged together in a sorted order, marking the end of sorting the first half.
 
 #### Pass 6
 
+> **[9  14  5]**
+
+>[9  14]
+
+>[9] [14]
+
+> [9 14]
+
+> [5  9  14]
+
+Going back to the original second half, we repeat the process. In this case we have an outlier, value `5`. Since `5` doesn't need to be sorted by itself, it is simply added in the final list with `9` and `14`.
 
 #### Pass 7
 
+> [2  4  8  21]  [5  9  14]
+
+> [2  4  5  8  9  14]
+
+Now that we have our two sorted halves of our original list, they are finally merged together to make one sorted list. 
 
 ## Efficiency
 
