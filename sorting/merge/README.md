@@ -110,12 +110,12 @@ Going back to the original second half, we repeat the process. In this case we h
 
 > [2  4  5  8  9  14]
 
-Now that we have our two sorted halves of our original list, they are finally merged together to make one sorted list. 
+Now that we have our two sorted halves of our original list, they are finally merged together to make one sorted list.
 
 ## Efficiency
 
 *Time:*
-- **[Enter notation]**:
+- **O(logN)**: In all cases, merge sort always divides the list into two halves and takes linear time to merge the two halves.
 
 *Space:*
-- **[Enter notation]**:
+- **O(N)**: Needs N space since the elements are copied within a temporary list
