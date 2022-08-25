@@ -35,5 +35,5 @@ To run your tests
 - Code Challenge 16: [Tree Breadth First](python/docs/code-challenges/tree-breadth-first/README.md)
 - Code Challenge 17: [Tree Max](python/docs/code-challenges/tree-max/README.md)
 - Code Challenge 18: [Tree Fizz Buzz](python/docs/code-challenges/tree-fizz-buzz/README.md)
-- Code Challenge 19: []()
+- Code Challenge 26: [Insertion Sort](sorting/insertion/README.md)
 
