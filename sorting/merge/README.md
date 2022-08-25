@@ -1,6 +1,6 @@
 # Merge Sort
 
-**Merge Sort** 
+**Merge Sort**
 
 ## Pseudocode
 
