@@ -52,9 +52,6 @@ class Hashtable:
 
         return gathered_keys
 
-
-
-
     def hash(self, key):
         # add ascii values of each character together
         ascii_values = [ord(char) for char in key]
