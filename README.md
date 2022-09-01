@@ -43,4 +43,6 @@ Module 2:
 - Code Challenge 28: [Quick Sort](sorting/quick/README.md)
 - Code Challenge 30: [Hash Tables](python/docs/code-challenges/hashtable/README.md)
 - Code Challenge 31: [Hashmap Repeated Word](python/docs/code-challenges/hashmap-repeated-word/README.md)
+- Code Challenge 32: []()
+- Code Challenge 33: [Hashmap Left Join](python/docs/code-challenges/hashmap-left-join/README.md)
 
