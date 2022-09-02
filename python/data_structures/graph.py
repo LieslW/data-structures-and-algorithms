@@ -25,6 +25,8 @@ class Graph:
     def get_neighbors(self, vertex):
         return self.adjacency_list[vertex]
 
+    # what would happen if we called get_neighbors with a vertex that isn't in the graph?
+
 
 class Vertex:
     def __init__(self, value):
