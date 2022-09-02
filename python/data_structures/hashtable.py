@@ -2,17 +2,29 @@ from data_structures.linked_list import LinkedList
 
 
 class Hashtable:
-    """
-    Put docstring here
-    """
 
     def __init__(self, size=1024):
         self.buckets = [None] * size
         self.size = size
 
+    # def get(self, key):
+    #     # method body here
+    #     pass
+
     def get(self, key):
-        # method body here
-        pass
+        index = self.hash(key)
+        if not self.buckets[index]:
+            return None
+        bucket = self.buckets[index]
+
+        current = bucket.head
+        while current:
+            key_value_pair = current.value
+            if key_value_pair[0] == key:
+                return key_value_pair[1]
+            current = current.next
+
+        return None
 
     def set(self, key, value):
         index = self.hash(key)
