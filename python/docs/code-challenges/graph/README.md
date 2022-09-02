@@ -29,20 +29,20 @@ Implement your own `Graph`. It should be represented as an adjacency list.
    - Arguments: none
    - Returns the total number of nodes in the graph
 
-### Create Tests for Graphs
+### Pass Tests for Graphs
 
-[] Node can be successfully added to the graph
-[] An edge can be successfully added to the graph
-[] A collection of all nodes can be properly retrieved from the graph
-[] All appropriate neighbors can be retrieved from the graph
-[] Neighbors are returned with the weight between nodes included
-[] The proper size is returned, representing the number of nodes in the graph
-[] A graph with only one node and edge can be properly returned
-[] An empty graph properly returns null
+[X] Node can be successfully added to the graph
+[X] An edge can be successfully added to the graph
+[X] A collection of all nodes can be properly retrieved from the graph
+[X] All appropriate neighbors can be retrieved from the graph
+[X] Neighbors are returned with the weight between nodes included
+[X] The proper size is returned, representing the number of nodes in the graph
+[X] A graph with only one node and edge can be properly returned
+[X] An empty graph properly returns null
 
 ## Approach & Efficiency
 
-Took a rigorous testing approach in which I developed the tests for my basic graph functions. First, I understood what the requirements for the tests were then built the tests from there. After building the tests, I used a test driven mindset to build some functions that will pass my tests.
-Big O notation for a graphs is [O(1)] for time and [O(N)] for space.
+Took a rigorous testing approach in which I practiced TDD and built my graph functions around understanding the tests.
+Big O notation for a graphs is O(N) for time and O(N) for space.
 
 
