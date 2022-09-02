@@ -38,7 +38,6 @@ Implement your own `Graph`. It should be represented as an adjacency list.
 [X] Neighbors are returned with the weight between nodes included
 [X] The proper size is returned, representing the number of nodes in the graph
 [X] A graph with only one node and edge can be properly returned
-[X] An empty graph properly returns null
 
 ## Approach & Efficiency
 
