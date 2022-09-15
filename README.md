@@ -20,6 +20,7 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
+Module 1:
 - Code Challenge 1: [Array Reverse](python/docs/code-challenges/array-reverse/README.md)
 - Code Challenge 2: [Array Insert Shift](python/docs/code-challenges/array-insert-shift/README.md)
 - Code Challenge 3: [Array Binary Search](python/docs/code-challenges/array-binary-search/README.md)
@@ -35,5 +36,13 @@ To run your tests
 - Code Challenge 16: [Tree Breadth First](python/docs/code-challenges/tree-breadth-first/README.md)
 - Code Challenge 17: [Tree Max](python/docs/code-challenges/tree-max/README.md)
 - Code Challenge 18: [Tree Fizz Buzz](python/docs/code-challenges/tree-fizz-buzz/README.md)
-- Code Challenge 19: []()
+
+Module 2:
+- Code Challenge 26: [Insertion Sort](sorting/insertion/README.md)
+- Code Challenge 27: [Merge Sort](sorting/merge/README.md)
+- Code Challenge 28: [Quick Sort](sorting/quick/README.md)
+- Code Challenge 30: [Hash Tables](python/docs/code-challenges/hashtable/README.md)
+- Code Challenge 31: [Hashmap Repeated Word](python/docs/code-challenges/hashmap-repeated-word/README.md)
+-
+- Code Challenge 35: [Graph](python/docs/code-challenges/graph/README.md)
 
