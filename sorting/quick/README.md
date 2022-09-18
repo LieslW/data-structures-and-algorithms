@@ -82,4 +82,4 @@ The process is then repeated for the two halves until the list is completely sor
 - **O(n^2)**: The worst case for QuickSort is when the algorithm picks a pivot that is either the greatest or smallest element in the list. This essentially doubles the time QuickSort takes since it must go through it multiple times.
 
 *Space:*
-- **O(N)**: Not creating any container other than given list. 
+- **O(N)**: Not creating any container other than given list.
