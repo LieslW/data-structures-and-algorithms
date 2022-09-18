@@ -4,11 +4,11 @@ Write a function called `repeated word` that finds the first word to occur more 
 
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![Code Challenge 31](whiteboardcc31.png)
 
 ## Approach & Efficiency
 For this approach, utilized regex in order to split the words at the correct spacial intervals. Then once the words were split, looped through them to check if any repeats existed in the set. Otherwise, add it to the set.
-Big O Notation for this O(N) for both time space. 
+Big O Notation for this O(N) for both time space.
 
 ## Solution
 
