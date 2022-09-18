@@ -1,12 +1,12 @@
 import pytest
-from code_challenges.hashtable_left_join import left_join
+from code_challenges.hashtable_left_join import hashmap_left_join
 
 
 def test_exists():
-    assert left_join
+    assert hashmap_left_join
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_example():
     synonyms = {
         "diligent": "employed",
@@ -31,6 +31,6 @@ def test_example():
         ["guide", "usher", "follow"],
     ]
 
-    actual = left_join(synonyms, antonyms)
+    actual = hashmap_left_join(synonyms, antonyms)
 
     assert actual == expected
