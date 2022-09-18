@@ -1,6 +1,7 @@
 from data_structures.hashtable import Hashtable
 import re
 
+
 def hashtable_repeated_word(word):
     regex_string = re.compile('[^a-zA-Z ]')
     words_strip = regex_string.sub('', word)
