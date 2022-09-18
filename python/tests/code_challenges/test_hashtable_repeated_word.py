@@ -1,80 +1,80 @@
 import pytest
-from code_challenges.hashtable_repeated_word import first_repeated_word
+from code_challenges.hashtable_repeated_word import hashtable_repeated_word
 
 
 # @pytest.mark.skip("TODO")
 def test_blank():
-    actual = first_repeated_word("")
+    actual = hashtable_repeated_word("")
     expected = None
     assert actual == expected
 
 
 # @pytest.mark.skip("TODO")
 def test_no_repeat():
-    actual = first_repeated_word("nobody here but us chickens")
+    actual = hashtable_repeated_word("We all float down here")
     expected = None
     assert actual == expected
 
 
 # @pytest.mark.skip("TODO")
-def test_a_a():
-    actual = first_repeated_word("apple apple")
-    expected = "apple"
+def test_same_words():
+    actual = hashtable_repeated_word("cat cat")
+    expected = "cat"
     assert actual == expected
 
 
 # @pytest.mark.skip("TODO")
-def test_a_b_a():
-    actual = first_repeated_word("apple banana apple")
-    expected = "apple"
+def test_repeated_word():
+    actual = hashtable_repeated_word("cat dog cat")
+    expected = "cat"
     assert actual == expected
 
 
 # @pytest.mark.skip("TODO")
-def test_a_b_a_b():
-    actual = first_repeated_word("apple banana apple banana")
-    expected = "apple"
+def test_first_repeated_word():
+    actual = hashtable_repeated_word("cat dog cat dog")
+    expected = "cat"
     assert actual == expected
 
 
 # @pytest.mark.skip("TODO")
-def test_a_b_b_a():
-    actual = first_repeated_word("apple banana banana apple")
-    expected = "banana"
+def test_first_repeated_word_2():
+    actual = hashtable_repeated_word("cat dog dog cat")
+    expected = "dog"
     assert actual == expected
 
 
 # @pytest.mark.skip("TODO")
-def test_ignore_case():
-    actual = first_repeated_word("apple banana BANANA apple")
-    expected = "banana"
+def test_case():
+    actual = hashtable_repeated_word("cat dog DOG cat")
+    expected = "dog"
     assert actual == expected
 
 
 # @pytest.mark.skip("TODO")
-def test_ignore_case_flipped():
-    actual = first_repeated_word("apple BANANA banana apple")
-    expected = "banana"
+def test_case_flipped():
+    actual = hashtable_repeated_word("cat DOG dog cat")
+    expected = "dog"
     assert actual == expected
 
 
 # @pytest.mark.skip("TODO")
 def test_punctuation():
-    actual = first_repeated_word("apple? BANANA! banana, apple.")
-    expected = "banana"
+    actual = hashtable_repeated_word("cat? dog! dog, cat.")
+    expected = "dog"
     assert actual == expected
 
 
 # @pytest.mark.skip("TODO")
 def test_punctuation_joins():
     txt = """
-  apple
-  apple.apple-apple
-  banana
-  apple?apple
-  banana
+  cat
+  cat.cat-cat
+  dog
+  cat?cat
+  dog
   """
 
-    actual = first_repeated_word(txt)
-    expected = "banana"
+    actual = hashtable_repeated_word(txt)
+    expected = "dog"
     assert actual == expected
