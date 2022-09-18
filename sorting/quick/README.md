@@ -1,6 +1,6 @@
 # Quick Sort
 
-**Quick Sort** is another sorting algorithm that uses three methods to go through what's called the "divide and conquer" strategy. 
+**Quick Sort** is another sorting algorithm that uses three methods to go through what's called the "divide and conquer" strategy. First, it picks a `pivot` element and partitions an array around the pivot. Partition is particularly important since it will put x at the correct position in relativity to the list and the pivot. Smaller elements than **x** will be put before and greater than after. It should be down in linear time.
 
 ## Pseudocode
 
@@ -41,78 +41,45 @@ ALGORITHM Swap(arr, i, low)
 
 ## Trace
 
-Sample List: [4, 8, 2, 21, 9, 14, 5]
+Sample List: [4, 8, 2, 9, 21, 14, 5]
 
 #### Pass 1
 
-> **[4   8   2   21   9   14   5]**
+> [4   ***8***   2   9   21   14   5]
 
-> [4    8   2   21]   [9  14   5]
+> [4   2    9   21  14   5  ***8***]
 
-To start, we are given this list of 7 values. It's going to be divided in half and divided in half more later on.
+To start, we are given this list of 7 values. For this example, the value **8** will be our pivot and put at the end of the array.
 
 #### Pass 2
 
-> **[4    8   2   21]   [9  14   5]**
+> [4   2   *9*  21   14   *5*  ***8***]
 
-> [4    8]    [2  21]
+> [4   2   *5*  21   14   *9*  ***8***]
 
->[4] [8]
 
-So far, the list has only had one pass through the first method which splits the list in halves. Here we see the first half being split until it can't split further.
+Now we are going to go through left_items and right_items. In terms of the pivot, left items start from the left of the list and right from the right. If the left item finds a greater than value and the right a less than value, the two are swapped and so forth.
 
 #### Pass 3
 
-> [4] [8]
+> [4   2   5  21   14   9  ***8***]
 
-> [4  8]
+> [4   2   5  ***8***   21   14   9]
 
-Method 1 will focus on very first half before it moves to the rest of the list. Here we see the first two original values, `4` and `8`, being merged back together in sorted order.
+Now that the greater than and less than values have been organized into two halves in terms of the pivot, 8 is placed back into the middle in terms of a left_item.
 
 #### Pass 4
 
-> [2  21]
+> [4   2   5  8   21   14   9]
 
-> [2]  [21]
+>  [2   4   5   8   9   14   21]
 
-> [2  21]
-
-Like `4` and `8` above, the next two original values are divided until no further then put back together in a sorted order.
-
-#### Pass 5
-
-> [4  8]   [2  21]
-
-> [2  4  8  21]
-
-Still focusing on the original first half, we have two sorted halves. These are merged together in a sorted order, marking the end of sorting the first half.
-
-#### Pass 6
-
-> **[9  14  5]**
-
->[9  14]
-
->[9] [14]
-
-> [9 14]
-
-> [5  9  14]
-
-Going back to the original second half, we repeat the process. In this case we have an outlier, value `5`. Since `5` doesn't need to be sorted by itself, it is simply added in the final list with `9` and `14`.
-
-#### Pass 7
-
-> [2  4  8  21]  [5  9  14]
-
-> [2  4  5  8  9  14]
-
-Now that we have our two sorted halves of our original list, they are finally merged together to make one sorted list.
+The process is then repeated for the two halves until the list is completely sorted.
 
 ## Efficiency
 
 *Time:*
-- **O(logN)**: In all cases, merge sort always divides the list into two halves and takes linear time to merge the two halves.
+- **O(n^2)**: The worst case for QuickSort is when the algorithm picks a pivot that is either the greatest or smallest element in the list. This essentially doubles the time QuickSort takes since it must go through it multiple times.
 
 *Space:*
-- **O(N)**: Needs N space since the elements are copied within a temporary list
+- **O(N)**: Not creating any container other than given list.
