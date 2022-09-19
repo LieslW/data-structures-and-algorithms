@@ -1,3 +1,6 @@
+from data_structures.queue import Queue
+
+
 class Graph:
 
     def __init__(self):
@@ -21,6 +24,23 @@ class Graph:
         if end_vertex not in self.adjacency_list:
             raise KeyError
         self.adjacency_list[start_vertex].append(edge)
+
+    def breadth_first(self, vertex):
+        all_vertices = []
+        breadth = Queue()
+        visited_vertices = set()
+        breadth.enqueue(vertex)
+        visited_vertices.add(vertex)
+
+        while not breadth.is_empty():
+            front = breadth.dequeue()
+            all_vertices.append(front.value)
+
+            for neighbor in self.get_neighbors(front):
+                if neighbor.vertex not in visited_vertices:
+                    visited_vertices.add(neighbor.vertex)
+                    breadth.enqueue(neighbor.vertex)
+        return all_vertices
 
     def get_neighbors(self, vertex):
         return self.adjacency_list[vertex]
