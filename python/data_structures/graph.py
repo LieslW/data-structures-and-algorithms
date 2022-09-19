@@ -42,6 +42,24 @@ class Graph:
                     breadth.enqueue(neighbor.vertex)
         return all_vertices
 
+    def depth_first_search(self, vertex):
+        if self.adjacency_list == {}:
+            return []
+
+        def traverse(node):
+            list.append(node.value)
+            neighbors = self.get_neighbors(node)
+
+            for edge in neighbors:
+                if edge.vertex.visited == 0:
+                    edge.vertex.visited = 1
+                    node.visited = 1
+                    traverse(edge.vertex)
+
+        list = []
+        traverse(vertex)
+        return list
+
     def get_neighbors(self, vertex):
         return self.adjacency_list[vertex]
 
@@ -49,8 +67,9 @@ class Graph:
 
 
 class Vertex:
-    def __init__(self, value):
+    def __init__(self, value, visited=0):
         self.value = value
+        self.visited = visited
 
 
 class Edge:
