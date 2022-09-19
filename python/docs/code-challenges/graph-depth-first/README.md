@@ -12,8 +12,8 @@ Write the following method for the Graph class:
 
 ## Approach & Efficiency
 
-For this challenge, first verified any matches within list and graph. Then checked neighbors and then incremented cost by edge's weight. However, if any of these steps were not verified, it returned false.
-The Big O Notation for this challenge is O(N^2) for time and O(N) for space.
+This challenge's code uses a recursive method that takes the index of the node and list. It recurses through the nodes, marking some as visited, unvisited, and current. 
+The Big O Notation for this challenge is O(N) for both time and space.
 
 ## Solution
 
