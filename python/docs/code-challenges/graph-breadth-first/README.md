@@ -11,7 +11,9 @@ Display the collection
 ![Code Challenge 36](whiteboardcc36.png)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+For this challenge, utilized lists, queues, and sets. First, enqueued everything into a queue than dequeued and appended to a list.
+The Big O Notation for this challenge is O(N) for both time and space.
 
 ## Solution
 
