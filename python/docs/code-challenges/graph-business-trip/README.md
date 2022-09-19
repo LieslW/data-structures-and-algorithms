@@ -11,8 +11,8 @@ Determine whether the trip is possible with direct flights, and how much it woul
 
 ## Approach & Efficiency
 
-For this challenge, utilized lists, queues, and sets. First, enqueued everything into a queue than dequeued and appended to a list.
-The Big O Notation for this challenge is O(N) for both time and space.
+For this challenge, first verified any matches within list and graph. Then checked neighbors and then incremented cost by edge's weight. However, if any of these steps were not verified, it returned false.
+The Big O Notation for this challenge is O(N^2) for time and O(N) for space.
 
 ## Solution
 
