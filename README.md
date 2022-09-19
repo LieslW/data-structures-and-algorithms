@@ -45,7 +45,7 @@ Module 2:
 - Code Challenge 31: [Hashmap Repeated Word](python/docs/code-challenges/hashmap-repeated-word/README.md)
 - Code Challenge 32: [Tree Intersection](python/docs/code-challenges/tree-intersection/README.md)
 - Code Challenge 33: [Hashmap Left Join](python/docs/code-challenges/hashmap-left-join/README.md)
-
 - Code Challenge 35: [Graph](python/docs/code-challenges/graph/README.md)
+- Code Challenge 36: [Graph Breadth First](python/docs/code-challenges/graph-breadth-first/README.md)
 
 
