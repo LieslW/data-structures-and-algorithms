@@ -48,5 +48,6 @@ Module 2:
 - Code Challenge 35: [Graph](python/docs/code-challenges/graph/README.md)
 - Code Challenge 36: [Graph Breadth First](python/docs/code-challenges/graph-breadth-first/README.md)
 - Code Challenge 37: [Graph Business Trip](python/docs/code-challenges/graph-business-trip/README.md)
+- Code Challenge 38: [Graph Depth First](python/docs/code-challenges/graph-depth-first/README.md)
 
 
