@@ -12,18 +12,18 @@ class Graph:
 
         return vertex
 
-    def size(self):
-        return len(self.adjacency_list)
-
-    def get_nodes(self):
-        return self.adjacency_list.keys()
-
     def add_edge(self, start_vertex, end_vertex, weight=0):
         edge = Edge(end_vertex, weight)
 
         if end_vertex not in self.adjacency_list:
-            raise KeyError
+            raise KeyError()
         self.adjacency_list[start_vertex].append(edge)
+
+    def get_nodes(self):
+        return list(self.adjacency_list.keys())
+
+    def size(self):
+        return len(self.adjacency_list)
 
     def breadth_first(self, vertex):
         all_vertices = []
